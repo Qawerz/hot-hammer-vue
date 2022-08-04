@@ -1,15 +1,15 @@
 <template>
 	<header class="header">
-		<img
+		<!-- <img
 			src="../../public/img/Zj8_PniLP1ZNMNJYGlvtv0MjFF28VtyQ5F-1gr6Rk29GSepmOlgxbveVgmwaqIjmeM1p4ba3.jpg"
-		/>
-		<div>
+		/> -->
+		<div class="container">
 			<h1>Идеи обретают форму</h1>
-			<br />
-			<h2>Мастерская по художественной ковке в городе Ломоносов.</h2>
-			<h2>Делаем изделия на заказ или по вашему выбору.</h2>
+			<hr />
+			<h2>Мастерская художественной ковки "Живая Сталь".</h2>
+			<h2>Поможет вам воплотить вашу мечту в метал		ле</h2>
 
-			<a>Получить изделие</a>
+			<a href="#contact">Получить изделие</a>
 		</div>
 	</header>
 </template>
@@ -28,11 +28,11 @@ header {
 		flex-direction: column;
 		align-items: center;
 		position: absolute;
-		border-radius: 5%;
+		border-radius: 2rem;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		background-color: #00000077;
+		// background-color: #00000077;
 		padding: 2rem;
 		h1,
 		h2 {
@@ -42,11 +42,47 @@ header {
 			margin: 0;
 		}
 
+		h1{
+			font-family: 'Playfair Display';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 64px;
+			line-height: 85px;
+			text-align: center;
+		}
+
+		h2{
+			font-family: 'Verdana';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 2;
+			display: flex;
+			align-items: center;
+			text-align: center;
+		}
+
+		hr {
+			width: 100%;
+			margin-top: 1rem;
+			margin-bottom: 3rem;
+		}
+
 		a{
 			color:#fff;
-			margin: 1.5rem;
+			margin: 3.5rem;
 			border: 1px solid #fff;
 			padding: 1rem;
+			border-radius: 20px 0px;
+
+			text-decoration: none;
+
+			font-family: 'Playfair Display SC';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 28px;
+			line-height: 37px;
+			text-transform: uppercase;
 		}
 	}
 }

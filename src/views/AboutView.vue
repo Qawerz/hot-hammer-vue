@@ -1,5 +1,16 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+	<NavCmp>
+    
+  </NavCmp>
 </template>
+
+<script>
+// import HeaderCmp from "@/components/HeaderCmp.vue"
+import NavCmp from "@/components/NavCmp.vue"
+export default {
+	components: {
+		// HeaderCmp,
+    NavCmp,
+	},
+}
+</script>
